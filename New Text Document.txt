@@ -1,0 +1,23 @@
+CREATE TABLE [dbo].[Registration] (
+    [Student_Number] VARCHAR (100) NULL,
+    [Password_]      VARCHAR (100) NULL,
+    [Name]           VARCHAR (50)  NULL,
+    [Surname]        VARCHAR (50)  NULL
+);
+
+
+CREATE TABLE [dbo].[Questions] (
+    [Question_Number]  INT           IDENTITY (1, 1) NOT NULL,
+    [Questions]        VARCHAR (300) NULL,
+    [Question_option1] VARCHAR (300) NULL,
+    [Question_option2] VARCHAR (300) NULL,
+    [Question_Answer]  VARCHAR (300) NULL,
+    CONSTRAINT [PK_questions] PRIMARY KEY CLUSTERED ([Question_Number] ASC)
+);
+
+CREATE TABLE [dbo].[Marks] (
+    [Name]       VARCHAR (50) NULL,
+    [Surname]    VARCHAR (50) NULL,
+    [Mark]       INT          NULL,
+    [Percentage] VARCHAR (10) NULL
+);
